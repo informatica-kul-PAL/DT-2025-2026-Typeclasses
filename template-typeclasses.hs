@@ -38,7 +38,7 @@ instance Functor Grid where
 -- increaseTreasure :: Cell -> Int -> Cell
 -- increaseTreasure = undefined
 
--- Gebruik `fmap` en de hulperfunctie om alle schatten in de grid te verhogen met 5:
+-- Gebruik `fmap` en de hulperfunctie om alle schatten in de grid te verhogen met een gegeven waarde:
 increaseAllTreasures :: Grid Cell -> Int -> Grid Cell
 increaseAllTreasures = undefined
 
