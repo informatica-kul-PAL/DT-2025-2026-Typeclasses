@@ -21,7 +21,7 @@ testGrid = Grid
 invalidTestGrid :: Grid Cell
 invalidTestGrid = Grid
   [ [Empty, Wall, Empty, Treasure 10, Empty]
-  , [Wall, Empty, Treasure -5, Empty, Wall]
+  , [Wall, Empty, Treasure (-5), Empty, Wall]
   , [Empty, Empty, Wall, Empty, Empty]
   , [Treasure 20, Wall, Empty, Empty, Treasure 15]
   , [Empty, Empty, Empty, Wall, Empty]
