@@ -84,7 +84,7 @@
       ],
       align(horizon)[
         ```haskell
-        class Equals t where
+        class Eq t where
             (==) :: t -> t -> Bool
             (/=) :: t -> t -> Bool
         ```
@@ -105,7 +105,7 @@
       ],
       align(horizon)[
         ```haskell
-        class Equals t where
+        class Eq t where
             (==) :: t -> t -> Bool
             (/=) :: t -> t -> Bool
         ```
@@ -154,7 +154,7 @@
   ]
   #align(center)[
     ```haskell
-    data MyList = Empty | Cons a (MyList a)
+    data MyList a = Empty | Cons a (MyList a)
     
     instance Functor MyList where
         fmap _ Empty = Empty
@@ -189,7 +189,7 @@
   = Nuttige typeclasses: `Foldable`
   #align(center)[
     ```haskell
-    data MyList = Empty | a (MyList a)
+    data MyList a = Empty | a (MyList a)
     
     instance Foldable MyList where
         foldr _ z Empty = z
@@ -243,7 +243,7 @@
   ]
   #align(center)[
     ```haskell
-    data MyList = Empty | Cons a (MyList a)
+    data MyList a = Empty | Cons a (MyList a)
     
     instance Traversable MyList where
         traverse _ Empty = pure Empty
