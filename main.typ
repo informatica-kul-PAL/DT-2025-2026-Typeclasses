@@ -592,7 +592,7 @@
   ```
   ```hs
   increaseAllTreasures :: Grid Cell -> Int -> Grid Cell
-  increaseAllTreasures grid v = fmap (increaseTreasure v) grid
+  increaseAllTreasures grid v = fmap (`increaseTreasure` v) grid
   ```
 ]
 
